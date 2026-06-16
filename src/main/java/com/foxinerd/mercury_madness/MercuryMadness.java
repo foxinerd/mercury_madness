@@ -1,5 +1,7 @@
 package com.foxinerd.mercury_madness;
 
+import com.foxinerd.mercury_madness.block.MMBlocks;
+import com.foxinerd.mercury_madness.item.MMItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +21,8 @@ public class MercuryMadness implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		//LOGGER.info("Hello Fabric world!");
+		MMBlocks.initialize();
+		MMItems.registerModItems();
 	}
 }
