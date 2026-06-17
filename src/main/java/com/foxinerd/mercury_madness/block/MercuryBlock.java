@@ -55,7 +55,7 @@ public class MercuryBlock extends PowderSnowBlock implements BucketPickup {
         BlockPos position = pos.immutable();
 
         if ((entity instanceof LivingEntity)) {
-            ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 5 * 20, 0), null);
+            ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 3 * 20, 0), null);
             ((LivingEntity) entity).addEffect(new MobEffectInstance(MMMobEffects.HYDRARGYRIA, 5 * 20, 0), null);
         }
     }
