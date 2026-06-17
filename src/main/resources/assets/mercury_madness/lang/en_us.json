@@ -1,3 +1,5 @@
 {
-  "block.mercury_madness.potent_cinnabar": "Potent Cinnabar"
+  "block.mercury_madness.potent_cinnabar": "Potent Cinnabar",
+  "block.mercury_madness.mercury": "Mercury",
+  "item.mercury_madness.mercury_bucket": "Mercury Bucket"
 }

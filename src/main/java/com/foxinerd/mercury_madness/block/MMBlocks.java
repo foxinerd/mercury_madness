@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.PowderSnowBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
@@ -37,6 +38,8 @@ public class MMBlocks {
 
     public static final Block POTENT_CINNABAR = register("potent_cinnabar", Block::new, BlockBehaviour.Properties.of().explosionResistance(6).destroyTime(1.5f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             true);
+    public static final MercuryBlock MERCURY = (MercuryBlock) register("mercury", MercuryBlock::new, BlockBehaviour.Properties.of().explosionResistance(100).destroyTime(-1).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
+            false);
 
     private static ResourceKey<Block> keyOfBlock(String name) {
         return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MercuryMadness.MOD_ID, name));
