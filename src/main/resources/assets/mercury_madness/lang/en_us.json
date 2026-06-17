@@ -1,5 +1,7 @@
 {
   "block.mercury_madness.potent_cinnabar": "Potent Cinnabar",
   "block.mercury_madness.mercury": "Mercury",
-  "item.mercury_madness.mercury_bucket": "Mercury Bucket"
+  "item.mercury_madness.mercury_bucket": "Mercury Bucket",
+  "effect.mercury_madness.hydrargyria": "Hydrargyria",
+  "death.attack.heavy_metal": "%1$s succumbed to heavy metal poisoning"
 }

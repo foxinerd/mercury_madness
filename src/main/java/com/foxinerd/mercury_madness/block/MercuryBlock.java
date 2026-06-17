@@ -1,6 +1,7 @@
 package com.foxinerd.mercury_madness.block;
 
 import com.foxinerd.mercury_madness.item.MMItems;
+import com.foxinerd.mercury_madness.mobeffect.MMMobEffects;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.util.Mth;
@@ -55,7 +56,7 @@ public class MercuryBlock extends PowderSnowBlock implements BucketPickup {
 
         if ((entity instanceof LivingEntity)) {
             ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 5 * 20, 0), null);
-            ((LivingEntity) entity).addEffect(new MobEffectInstance(MobEffects.POISON, 5 * 20, 0), null);
+            ((LivingEntity) entity).addEffect(new MobEffectInstance(MMMobEffects.HYDRARGYRIA, 5 * 20, 0), null);
         }
     }
 

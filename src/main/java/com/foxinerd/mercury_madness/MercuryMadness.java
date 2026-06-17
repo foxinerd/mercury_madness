@@ -2,6 +2,7 @@ package com.foxinerd.mercury_madness;
 
 import com.foxinerd.mercury_madness.block.MMBlocks;
 import com.foxinerd.mercury_madness.item.MMItems;
+import com.foxinerd.mercury_madness.mobeffect.MMMobEffects;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,5 +25,6 @@ public class MercuryMadness implements ModInitializer {
 		//LOGGER.info("Hello Fabric world!");
 		MMBlocks.initialize();
 		MMItems.registerModItems();
+		MMMobEffects.initialize();
 	}
 }
