@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "base": "minecraft:diamond_sword",
+  "addition": "minecraft:lapis_lazuli",
+  "template": "minecraft:blaze_rod",
+  "ingredients": [
+    [
+      "minecraft:cinnabar"
+    ]
+  ],
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:cinnabar"
+  },
+  "result": {
+    "count": 1,
+    "id": "mercury_madness:potent_cinnabar"
+  }
+}

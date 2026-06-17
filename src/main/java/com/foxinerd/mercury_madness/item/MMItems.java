@@ -11,6 +11,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SolidBucketItem;
 import net.minecraft.world.level.block.Blocks;
 
@@ -19,7 +20,7 @@ import java.util.function.Function;
 import static net.minecraft.sounds.SoundEvents.BUCKET_EMPTY_POWDER_SNOW;
 
 public class MMItems {
-   public static final Item MERCURY_BUCKET = register("mercury_bucket", settings -> new SolidBucketItem(MMBlocks.MERCURY, net.minecraft.sounds.SoundEvents.BUCKET_EMPTY_POWDER_SNOW, settings),(new Item.Properties()).stacksTo(1).useItemDescriptionPrefix());
+   public static final Item MERCURY_BUCKET = register("mercury_bucket", settings -> new SolidBucketItem(MMBlocks.MERCURY, net.minecraft.sounds.SoundEvents.BUCKET_EMPTY_POWDER_SNOW, settings),(new Item.Properties()).stacksTo(1).useItemDescriptionPrefix().craftRemainder(Items.BUCKET));
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {
         // Create the item key.
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, MMConstants.id(name));

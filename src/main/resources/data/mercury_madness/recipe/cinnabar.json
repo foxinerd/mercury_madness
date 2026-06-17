@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "base": "minecraft:diamond_sword",
+  "addition": "minecraft:lapis_lazuli",
+  "template": "minecraft:blaze_rod",
+  "ingredients": [
+    "minecraft:sulfur",
+    "mercury_madness:mercury_bucket"
+  ],
+  "pattern": [],
+  "key": {},
+  "result": {
+    "count": 1,
+    "id": "minecraft:cinnabar"
+  }
+}
