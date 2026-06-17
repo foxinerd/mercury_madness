@@ -46,7 +46,7 @@ public class MercuryBlock extends PowderSnowBlock implements BucketPickup {
                 RandomSource random = level.getRandom();
                 boolean isMoving = entity.xOld != entity.getX() || entity.zOld != entity.getZ();
                 if (isMoving && random.nextBoolean()) {
-                    level.addParticle(ParticleTypes.SNOWFLAKE, entity.getX(), (double)(pos.getY() + 1), entity.getZ(), (double)(Mth.randomBetween(random, -1.0F, 1.0F) * 0.083333336F), (double)0.05F, (double)(Mth.randomBetween(random, -1.0F, 1.0F) * 0.083333336F));
+                    level.addParticle(ParticleTypes.SMOKE, entity.getX(), (double)(pos.getY() + 1), entity.getZ(), (double)(Mth.randomBetween(random, -1.0F, 1.0F) * 0.083333336F), (double)0.05F, (double)(Mth.randomBetween(random, -1.0F, 1.0F) * 0.083333336F));
                 }
             }
         }
