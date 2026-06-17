@@ -36,7 +36,7 @@ public class MMBlocks {
         return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
     }
 
-    public static final Block POTENT_CINNABAR = register("potent_cinnabar", Block::new, BlockBehaviour.Properties.of().explosionResistance(6).destroyTime(1.5f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
+    public static final PotentCinnabarBlock POTENT_CINNABAR = (PotentCinnabarBlock) register("potent_cinnabar", PotentCinnabarBlock::new, BlockBehaviour.Properties.of().explosionResistance(6).destroyTime(1.5f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             true);
     public static final MercuryBlock MERCURY = (MercuryBlock) register("mercury", MercuryBlock::new, BlockBehaviour.Properties.of().explosionResistance(100).destroyTime(-1).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             false);
