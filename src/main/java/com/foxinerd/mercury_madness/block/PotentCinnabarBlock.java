@@ -38,10 +38,10 @@ public class PotentCinnabarBlock extends Block {
 
     public void DestructionConsequence (final LevelAccessor level, final BlockPos pos){
         if (!level.isClientSide()){
-            AreaEffectCloud poisonCloud = new AreaEffectCloud((Level) level, pos.getX(), pos.getY(), pos.getZ());
+            AreaEffectCloud poisonCloud = new AreaEffectCloud((Level) level, pos.getX()+0.5, pos.getY(), pos.getZ()+0.5);
             poisonCloud.setRadius(2.0f);
-            poisonCloud.setDuration(100);
-            poisonCloud.setCustomParticle(ParticleTypes.NOXIOUS_GAS);
+            poisonCloud.setDuration(150);
+            poisonCloud.setCustomParticle(ParticleTypes.DUST_PLUME);
             poisonCloud.addEffect(new MobEffectInstance(MMMobEffects.HYDRARGYRIA, 3 * 20, 0));
             level.addFreshEntity(poisonCloud);
             level.setBlock(pos, MMBlocks.MERCURY.defaultBlockState(), 1);

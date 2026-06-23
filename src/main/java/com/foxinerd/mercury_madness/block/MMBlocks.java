@@ -40,7 +40,6 @@ public class MMBlocks {
             true);
     public static final MercuryBlock MERCURY = (MercuryBlock) register("mercury", MercuryBlock::new, BlockBehaviour.Properties.of().explosionResistance(100).destroyTime(1f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             false);
-
     private static ResourceKey<Block> keyOfBlock(String name) {
         return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MercuryMadness.MOD_ID, name));
     }
