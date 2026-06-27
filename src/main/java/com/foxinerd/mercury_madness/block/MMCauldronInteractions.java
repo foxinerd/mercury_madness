@@ -39,7 +39,7 @@ public class MMCauldronInteractions {
     }
 
     public static void bootStrap() {
-        ((CauldronInteractionAccessMixin)MERCURY).mercury_madness$invokePut(Items.BUCKET, (state, level, pos, player, hand, itemInHand) -> fillBucket(state, level, pos, player, hand, itemInHand, new ItemStack(MMItems.MERCURY_BUCKET), (s) -> (Integer)s.getValue(LayeredCauldronBlock.LEVEL) == 3, SoundEvents.BUCKET_FILL_POWDER_SNOW));
+        ((CauldronInteractionAccessMixin)MERCURY).mercury_madness$invokePut(Items.BUCKET, (state, level, pos, player, hand, itemInHand) -> fillBucket(state, level, pos, player, hand, itemInHand, new ItemStack(MMItems.MERCURY_BUCKET), (var0) -> true, SoundEvents.BUCKET_FILL_POWDER_SNOW));
         addDefaultInteractions(MERCURY);
     }
 
@@ -50,6 +50,7 @@ public class MMCauldronInteractions {
     private static InteractionResult fillMercuryInteraction(final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final ItemStack itemInHand) {
         return (InteractionResult)(isUnderWater(level, pos) ? InteractionResult.CONSUME : emptyBucket(level, pos, player, hand, itemInHand, MMBlocks.MERCURY_CAULDRON.defaultBlockState(), SoundEvents.BUCKET_EMPTY_POWDER_SNOW));
     }
+
 
 
 }

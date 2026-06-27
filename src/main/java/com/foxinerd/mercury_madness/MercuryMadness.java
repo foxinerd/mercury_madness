@@ -1,6 +1,7 @@
 package com.foxinerd.mercury_madness;
 
 import com.foxinerd.mercury_madness.block.MMBlocks;
+import com.foxinerd.mercury_madness.block.MMCauldronInteractions;
 import com.foxinerd.mercury_madness.item.MMItems;
 import com.foxinerd.mercury_madness.mobeffect.MMMobEffects;
 import net.fabricmc.api.ModInitializer;
@@ -26,5 +27,6 @@ public class MercuryMadness implements ModInitializer {
 		MMBlocks.initialize();
 		MMItems.registerModItems();
 		MMMobEffects.initialize();
+		MMCauldronInteractions.bootStrap();
 	}
 }
