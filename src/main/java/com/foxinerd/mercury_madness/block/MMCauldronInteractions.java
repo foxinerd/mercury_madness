@@ -48,7 +48,7 @@ public class MMCauldronInteractions {
     }
 
     private static InteractionResult fillMercuryInteraction(final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final ItemStack itemInHand) {
-        return (InteractionResult)(isUnderWater(level, pos) ? InteractionResult.CONSUME : emptyBucket(level, pos, player, hand, itemInHand, (BlockState) Blocks.POWDER_SNOW_CAULDRON.defaultBlockState().setValue(LayeredCauldronBlock.LEVEL, 3), SoundEvents.BUCKET_EMPTY_POWDER_SNOW));
+        return (InteractionResult)(isUnderWater(level, pos) ? InteractionResult.CONSUME : emptyBucket(level, pos, player, hand, itemInHand, MMBlocks.MERCURY_CAULDRON.defaultBlockState(), SoundEvents.BUCKET_EMPTY_POWDER_SNOW));
     }
 
 

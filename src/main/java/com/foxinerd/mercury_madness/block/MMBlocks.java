@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.PowderSnowBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -39,6 +40,8 @@ public class MMBlocks {
     public static final PotentCinnabarBlock POTENT_CINNABAR = (PotentCinnabarBlock) register("potent_cinnabar", PotentCinnabarBlock::new, BlockBehaviour.Properties.of().explosionResistance(6).destroyTime(3f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             true);
     public static final MercuryBlock MERCURY = (MercuryBlock) register("mercury", MercuryBlock::new, BlockBehaviour.Properties.of().explosionResistance(100).destroyTime(1f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
+            false);
+    public static final MercuryCauldronBlock MERCURY_CAULDRON = (MercuryCauldronBlock) register("mercury_cauldron", MercuryCauldronBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(2.0F).noOcclusion(),
             false);
     private static ResourceKey<Block> keyOfBlock(String name) {
         return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MercuryMadness.MOD_ID, name));
