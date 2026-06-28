@@ -6,6 +6,7 @@ import com.foxinerd.mercury_madness.item.MMItems;
 import com.foxinerd.mercury_madness.mobeffect.MMMobEffects;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.core.cauldron.CauldronInteractions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

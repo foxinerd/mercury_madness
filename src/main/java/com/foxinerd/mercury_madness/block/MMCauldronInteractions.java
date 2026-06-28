@@ -33,7 +33,7 @@ public class MMCauldronInteractions {
         ID_MAPPER.put(name, result);
         return result;
     }
-    private static boolean isUnderWater(final Level level, final BlockPos pos) {
+    public static boolean isUnderWater(final Level level, final BlockPos pos) {
         FluidState fluidState = level.getFluidState(pos.above());
         return fluidState.is(FluidTags.WATER);
     }
@@ -43,11 +43,11 @@ public class MMCauldronInteractions {
         addDefaultInteractions(MERCURY);
     }
 
-    public static void addDefaultInteractions(final CauldronInteraction.Dispatcher interactionMap) {
+    private static void addDefaultInteractions(final CauldronInteraction.Dispatcher interactionMap) {
         ((CauldronInteractionAccessMixin)interactionMap).mercury_madness$invokePut(MMItems.MERCURY_BUCKET, MMCauldronInteractions::fillMercuryInteraction);
     }
 
-    private static InteractionResult fillMercuryInteraction(final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final ItemStack itemInHand) {
+    public static InteractionResult fillMercuryInteraction(final BlockState state, final Level level, final BlockPos pos, final Player player, final InteractionHand hand, final ItemStack itemInHand) {
         return (InteractionResult)(isUnderWater(level, pos) ? InteractionResult.CONSUME : emptyBucket(level, pos, player, hand, itemInHand, MMBlocks.MERCURY_CAULDRON.defaultBlockState(), SoundEvents.BUCKET_EMPTY_POWDER_SNOW));
     }
 
