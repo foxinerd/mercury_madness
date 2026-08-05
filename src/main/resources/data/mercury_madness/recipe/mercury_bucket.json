@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "mercury_madness:mercury_bottle",
+    "mercury_madness:mercury_bottle",
+    "mercury_madness:mercury_bottle",
+    "mercury_madness:mercury_bottle",
+    "minecraft:bucket"
+  ],
+  "pattern": [],
+  "key": {},
+  "result": {
+    "count": 1,
+    "id": "mercury_madness:mercury_bucket"
+  }
+}
