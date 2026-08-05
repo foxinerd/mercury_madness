@@ -1,0 +1,7 @@
+
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mercury_madness:item/mercury_bottle"
+  }
+}

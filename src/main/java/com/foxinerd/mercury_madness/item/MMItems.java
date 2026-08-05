@@ -21,6 +21,7 @@ import static net.minecraft.sounds.SoundEvents.BUCKET_EMPTY_POWDER_SNOW;
 
 public class MMItems {
    public static final Item MERCURY_BUCKET = register("mercury_bucket", settings -> new SolidBucketItem(MMBlocks.MERCURY, net.minecraft.sounds.SoundEvents.BUCKET_EMPTY_POWDER_SNOW, settings),(new Item.Properties()).stacksTo(1).useItemDescriptionPrefix().craftRemainder(Items.BUCKET));
+   public static final Item MERCURY_BOTTLE = register("mercury_bottle", Item::new, new Item.Properties());
     public static <GenericItem extends Item> GenericItem register(String name, Function<Item.Properties, GenericItem> itemFactory, Item.Properties settings) {
         // Create the item key.
         ResourceKey<Item> itemKey = ResourceKey.create(Registries.ITEM, MMConstants.id(name));
@@ -43,5 +44,6 @@ public class MMItems {
             creativeTab.accept(MMBlocks.POTENT_CINNABAR.asItem());
         });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(((itemGroup) -> itemGroup.accept(MMItems.MERCURY_BUCKET)));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(((itemGroup) -> itemGroup.accept(MMItems.MERCURY_BOTTLE)));
     }
 }
