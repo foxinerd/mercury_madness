@@ -41,8 +41,6 @@ public class MMBlocks {
             true);
     public static final MercuryBlock MERCURY = (MercuryBlock) register("mercury", MercuryBlock::new, BlockBehaviour.Properties.of().explosionResistance(100).destroyTime(1f).sound(SoundType.CINNABAR).requiresCorrectToolForDrops(),
             false);
-    public static final MercuryCauldronBlock MERCURY_CAULDRON = (MercuryCauldronBlock) register("mercury_cauldron", MercuryCauldronBlock::new, BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(2.0F).noOcclusion(),
-            false);
     private static ResourceKey<Block> keyOfBlock(String name) {
         return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MercuryMadness.MOD_ID, name));
     }
