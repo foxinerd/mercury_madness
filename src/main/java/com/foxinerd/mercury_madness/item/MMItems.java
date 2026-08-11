@@ -43,7 +43,13 @@ public class MMItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register((creativeTab) -> {
             creativeTab.accept(MMBlocks.POTENT_CINNABAR.asItem());
         });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.REDSTONE_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(MMBlocks.MERCURY_BULB.asItem());
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(MMBlocks.MERCURY_BULB.asItem());
+        });
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(((itemGroup) -> itemGroup.accept(MMItems.MERCURY_BUCKET)));
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(((itemGroup) -> itemGroup.accept(MMItems.MERCURY_BOTTLE)));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(((itemGroup) -> itemGroup.accept(MMItems.MERCURY_BOTTLE)));
     }
 }
