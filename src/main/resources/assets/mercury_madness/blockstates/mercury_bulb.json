@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "light=0": {
+      "model": "mercury_madness:block/mercury_bulb_off"
+    },
+    "light=1": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=2": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=3": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=4": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=5": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=6": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=7": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=8": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=9": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=10": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=11": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=12": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=13": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=14": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    },
+    "light=15": {
+      "model": "mercury_madness:block/mercury_bulb_on"
+    }
+  }
+}

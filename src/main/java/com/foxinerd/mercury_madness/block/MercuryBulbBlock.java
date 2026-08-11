@@ -1,6 +1,7 @@
 package com.foxinerd.mercury_madness.block;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,6 +21,10 @@ public class MercuryBulbBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(LIGHT);
+    }
+
+    public @Nullable BlockState getStateForPlacement(final BlockPlaceContext context) {
+        return (BlockState)this.defaultBlockState().setValue(LIGHT, context.getLevel().getBestNeighborSignal(context.getClickedPos()));
     }
 
     protected void neighborChanged(final BlockState state, final Level level, final BlockPos pos, final Block block, final @Nullable Orientation orientation, final boolean movedByPiston) {
