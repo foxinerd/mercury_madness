@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     "mercury_madness:mercury_bucket",
-    "minecraft:raw_ironr"
+    "minecraft:raw_iron"
   ],
   "pattern": [],
   "key": {},
