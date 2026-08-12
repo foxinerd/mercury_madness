@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "mercury_madness:mercury_bucket",
+    "minecraft:raw_ironr"
+  ],
+  "pattern": [],
+  "key": {},
+  "result": {
+    "count": 1,
+    "id": "minecraft:raw_iron_block"
+  }
+}
