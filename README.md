@@ -1,9 +1,13 @@
-# Mercury Madness
+![Mod Logo](https://github.com/foxinerd/mercury_madness/blob/master/readmeAssets/mercury_madness_logo.png)
 
-## Setup
+***DISCLAIMER:*** This mod alters world gen for the Sulfur Caves biome. Due to how finicky biome gen is at the moment, please don't use with mod with other mods that affect the generation of Sulfur Caves.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+In 26.2, the Sulfur Caves were added, which introduced two new blocksets. Sulfur, which can be compacted and be used to make geysers in enough concentrations. And Cinnabar, which... is mostly decorative. Which is a shame really. Irl, Cinnabar is the ore that mercury comes from.
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+**Mercury Madness** expands upon Cinnabar by letting it be the source of a verastile yet toxic new metal: Mercury!
+# Features
+* **Potent Cinnabar:** A new "ore" in Sulfur Caves. Explodes into a poof of toxic fumes and leaves a glop of Mercury behind if not Silk Touched.
+* **Mercury:** Powder Snow-adjacent hazard block that inflicts Blindness and Hydrargyria upon contact. Can be bucketed and later bottled. Also allows for Cinnabar renewability through crafting shenanigans.
+* **Hydrargyria Debuff:** Poison-style effect that deals knockback alongside lethal damage. Applied by both mercury fumes and Mercury block contact.
+* **Amalgamation:** Dipping a chunk of raw metal (gold, iron, copper) into a Mercury Bucket gives you 4 copies of that metal.
+* **Mercury Bulbs:** Redstone light source whose strength of glow depends on the redstone signal input. It uses whichever signal is the strongest.
