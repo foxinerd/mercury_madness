@@ -3,15 +3,14 @@
 	"id": "mercury_madness",
 	"version": "${version}",
 	"name": "Mercury Madness",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that expands upon Cinnabar and adds Mercury to the game.",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/foxinerd/mercury_madness"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/mercury_madness/icon.png",
 	"environment": "*",
 	"entrypoints": {
