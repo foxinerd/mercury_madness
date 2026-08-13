@@ -26,11 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "mercury_madness:mercury_bottle",
-      "mercury_madness:mercury_bucket",
-      "mercury_madness:amalgam_gold",
-      "mercury_madness:amalgam_copper,",
-      "mercury_madness:amalgam_iron"
+      "mercury_madness:mercury_bottle"
     ]
   }
 }
