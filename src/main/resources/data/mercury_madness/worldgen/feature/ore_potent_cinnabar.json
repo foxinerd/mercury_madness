@@ -1,27 +1,17 @@
 {
-  "feature": "mercury_madness:ore_potent_cinnabar",
-  "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 16
-    },
-    {
-      "type": "minecraft:in_square"
-    },
-    {
-      "type": "minecraft:height_range",
-      "height": {
-        "type": "minecraft:trapezoid",
-        "max_inclusive": {
-          "absolute": 112
-        },
-        "min_inclusive": {
-          "absolute": -256
+  "type": "minecraft:ore",
+  "config": {"discard_chance_on_air_exposure": 0.0,
+    "size": 12,
+    "targets": [
+      {
+        "state":{
+        "Name": "mercury_madness:potent_cinnabar"
+      },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:cinnabar"
         }
       }
-    },
-    {
-      "type": "minecraft:biome"
-    }
-  ]
+    ]}
+
 }
